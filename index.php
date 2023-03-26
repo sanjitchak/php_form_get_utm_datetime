@@ -45,7 +45,7 @@ $data_json = json_encode($data);
 
 // Set up the cURL request to send the data to the webhook
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://hooks.zapier.com/hooks/catch/8438582/33u6bhi/');
+curl_setopt($ch, CURLOPT_URL, '[Hook URL]');
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_json);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
@@ -58,13 +58,13 @@ $response = curl_exec($ch);
 curl_close($ch);
 
 // Redirect the user to a thank you page
-header('Location: https://imjo.in/UUKvvT');
+header('Location: [Redirect URL]');
 exit();
 	}
 ?>
 
 /** Font awesome script **/
-<script src="https://kit.fontawesome.com/27d25b834e.js" crossorigin="anonymous"></script>
+<script src="[Script URL]" crossorigin="anonymous"></script>
 
 <script>
     function hideButton() {
